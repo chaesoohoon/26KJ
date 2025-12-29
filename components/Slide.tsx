@@ -21,18 +21,14 @@ const Slide: React.FC<SlideProps> = ({ children, title, subtitle, pageNumber }) 
            <span className="text-blue-400 font-black tracking-[0.4em] text-[10px] md:text-[11px] uppercase">Strategic Operational Roadmap 2026</span>
         </div>
         {title && <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-[-0.04em] leading-tight mb-2 text-shadow-strong">{title}</h1>}
-        {subtitle && <p className="text-lg md:text-xl text-slate-400 font-medium max-w-5xl leading-relaxed italic border-l-4 border-white/5 pl-4">{subtitle}</p>}
+        {subtitle && <p className="text-lg md:text-xl text-slate-400 font-medium max-w-5xl leading-relaxed border-l-4 border-white/5 pl-4">{subtitle}</p>}
       </header>
       
       <main className="flex-1 z-10 relative flex flex-col min-h-0 overflow-hidden">
         {children}
       </main>
 
-      <footer className="z-10 mt-6 flex justify-between items-center opacity-30 shrink-0">
-        <div className="flex flex-col">
-          <span className="text-white font-black text-xs tracking-tight">THE INTERNATIONAL</span>
-          <span className="text-slate-500 text-[8px] font-black tracking-[0.2em] uppercase">Vocational Excellence Center</span>
-        </div>
+      <footer className="z-10 mt-6 flex justify-end items-center opacity-40 shrink-0">
         <div className="text-white font-black text-2xl tracking-tighter tabular-nums flex items-center">
           <span className="text-blue-500">{pageNumber.toString().padStart(2, '0')}</span>
           <span className="text-slate-800 mx-2 text-lg">/</span>

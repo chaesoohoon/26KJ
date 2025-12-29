@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026 더국제직업전문학교 운영 계획</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/Paperlogy-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/Paperlogy-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/Paperlogy-ExtraBold.woff2') format('woff2');
+            font-weight: 800;
+            font-style: normal;
+        }
+
         body {
-            font-family: 'Pretendard', sans-serif;
+            font-family: 'Paperlogy', 'Pretendard', sans-serif;
             background: #020617;
             margin: 0;
             padding: 0;
@@ -43,12 +62,6 @@
             text-shadow: 0 0 50px rgba(96, 165, 250, 0.3);
         }
 
-        .recharts-text {
-            fill: #94a3b8 !important;
-            font-size: 11px;
-            font-weight: 500;
-        }
-        
         ::-webkit-scrollbar {
             display: none;
         }
@@ -56,13 +69,11 @@
         .glass-panel {
             background: rgba(255, 255, 255, 0.02);
             backdrop-filter: blur(20px);
-            border: none !important;
-            box-shadow: none !important;
         }
 
-        /* 텍스트 가독성 향상을 위한 미세 조정 */
-        .leading-tight-custom {
-            line-height: 1.1;
+        /* 기울임 제거 강제 설정 */
+        i, em, .italic {
+            font-style: normal !important;
         }
     </style>
 <script type="importmap">
